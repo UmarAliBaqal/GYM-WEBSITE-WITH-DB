@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mounis Fitness</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter&family=Oswald:wght@200&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* CSS Reset */
+        body {
+            color: white
+        }
+
+        body {
+            font-family: 'Bebas Neue', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('photo-1534438327276-14e5300c3a48.jpg');
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: -6px;
+            /* color: white; */
+            /* border: 2px solid red; */
+            display: inline-block;
+        }
+
+        .left img {
+            width: 118px;
+            height: 63px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 2px;
+        }
+
+        .mid {
+            display: block;
+            width: 28%;
+            margin: 8px auto;
+            /* color: white; */
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* color: white; */
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            font-size: 17px;
+            color: white;
+            text-decoration: none;
+            padding: 7px;
+        }
+
+        .a:hover {
+            color: thistle;
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: 'Bebas Neue', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 3px 8px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+
+
+        }
+
+        .container {
+            border: 2px solid grey;
+            margin: 72px 66px;
+            padding: 46px 21px;
+            width: 33%;
+            border-radius: 13px;
+        }
+
+        .form input {
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            display: block;
+            width: 329px;
+            padding: 4px;
+            border: 2px solid black;
+            margin: 3px auto;
+            font-size: 14px;
+            border-radius: 19px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container input {
+            display: block;
+            width: 335px;
+            margin: 8px auto;
+            border-radius: 19px;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="photo-1534438327276-14e5300c3a48.jpg">
+            <div>Lazo Fitness</div>
+        </div>
+        <!-- midbox for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="a">Home</a></li>
+                <li><a href="#" class="a">About Us</a></li>
+                <li><a href="#" class="a">Fitness Calculator</a></li>
+                <li><a href="#" class="a">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- rightb box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Join the best gym of Dubai Now!</h1>
+            <form action="/details" method="post">
+                <div class="form">
+                    <input type="text" name="name" placeholder="Enter your Name">
+                </div>
+                <div class="form">
+                    <input type="text" name="age" placeholder="Enter your Age">
+                </div>
+                <div class="form">
+                    <input type="text" name="gender" placeholder="Enter your Gender">
+                </div>
+                <div class="form">
+                    <input type="text" name="area" placeholder="Enter your Locality">
+                </div>
+                <div class="form">
+                    <input type="number" name="number" placeholder="Enter your Phone Number">
+                </div>
+                <div class="form">
+                    <input type="text" name="email" placeholder="Enter your Email ID">
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
